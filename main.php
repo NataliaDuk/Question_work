@@ -1,26 +1,25 @@
-<?php
-$mysql= new mysqli("127.0.0.1", "root", "root", "registration", 3306);
-if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password1 = $_POST['password1'];
-    $password2 = $_POST['password2'];
-    if (!empty($username) && !empty($password1) && !empty($password2) && $password1 == $password2) {
+<!-- <?php
+// $mysql= new mysqli("127.0.0.1", "root", "root", "registration", 3306);
+// if (isset($_POST['submit'])) {
+//     $username = $_POST['username'];
+//     $password1 = $_POST['password1'];
+//     $password2 = $_POST['password2'];
+//     if (!empty($username) && !empty($password1) && !empty($password2) && $password1 == $password2) {
 
-        $mysql->query("SELECT * FROM `signup` WHERE `username`='$username' and `password`='$password2'");
-        $mysql->close();
-        header("Location: test.php");
-        echo 'Вы зарегистрированы';
-        exit();
+//         $mysql->query("SELECT * FROM `signup` WHERE `username`='$username' and `password`='$password2'");
+//         $mysql->close();
+//         header("Location: test.php");
+//         echo 'Вы зарегистрированы';
+//         exit();
+
+//             }
+//             else {
+//                 echo 'Все поля должны быть заполнены';
+//             }
+//         }
 
 
-            }
-            else {
-                echo 'Все поля должны быть заполнены';
-            }
-        }
-
-
-?>
+?> -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -40,7 +39,6 @@ if (isset($_POST['submit'])) {
 <input type="password" name="password2">
 <button name="submit">Вход
 </form>
-<a href=""
 
 </body>
 </html>
