@@ -56,7 +56,30 @@
 <br>
 <input type="submt" value="Оценить">
    </form>
-   <?php 
+   <?php
+
+$fileName="opros_1.txt";
+   $result1 = $_POST["N1"];
+
+   $count1 = explode(PHP_EOL, file_get_contents($fileName));
+
+   $count[$result]++;
+   file_put_contents($fileName, implode(PHP_EOL, $count));
+   $sumN=array_sum($count);
+
+
+   ?>
+
+    <div class=meny>
+        <?php
+        echo "<h1>Результаты голосования: </h1>";
+        echo "<h2>Очень хороший:" .$procent[0]. "%</h2>";
+        echo "<h2>Хороший: " . $procent[1]. "%</h2>";
+        echo "<h2>Нормальный: ". $procent[2]. "%</h2>";
+        echo "<h2>Плохой: " . $procent[3]. "%</h2>";
+        echo "<h1>ИТОГО: " .$sumN. " голосов</h1>";
+        ?>
+    </div>;hp
    ?>
 </body>
 </html>

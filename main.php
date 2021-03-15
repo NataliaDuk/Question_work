@@ -1,25 +1,3 @@
-<!-- <?php
-// $mysql= new mysqli("127.0.0.1", "root", "root", "registration", 3306);
-// if (isset($_POST['submit'])) {
-//     $username = $_POST['username'];
-//     $password1 = $_POST['password1'];
-//     $password2 = $_POST['password2'];
-//     if (!empty($username) && !empty($password1) && !empty($password2) && $password1 == $password2) {
-
-//         $mysql->query("SELECT * FROM `signup` WHERE `username`='$username' and `password`='$password2'");
-//         $mysql->close();
-//         header("Location: test.php");
-//         echo 'Вы зарегистрированы';
-//         exit();
-
-//             }
-//             else {
-//                 echo 'Все поля должны быть заполнены';
-//             }
-//         }
-
-
-?> -->
 <!doctype html>
 <html lang="en">
 <head>
@@ -30,14 +8,14 @@
     <title>Question</title>
 </head>
 <body>
-<form method="post" action="?">
-<label>Введите Ваш логин</label>
+<form method="post" action="registration.php">
+<h1>Введите Ваш логин</h1>
 <input type="text" name="username">
-<label for="password">Введите Ваш пароль</label>
+<h1>Введите Ваш пароль</h1>
 <input type="password" name="password1">
-<label for="password">Повторите Ваш пароль еще раз</label>
+<h1>Повторите Ваш пароль еще раз</h1>
 <input type="password" name="password2">
-<button name="submit">Вход
+<input type="submit" value="Войти">
 </form>
 
 </body>
