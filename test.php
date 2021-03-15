@@ -53,6 +53,7 @@
 <td><input type="radio" name="N4" value="5"></td>
 </tr>
 </table>
+<br>
 <input type="submt" value="Оценить">
    </form>
    <?php 
