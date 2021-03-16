@@ -9,7 +9,7 @@
 <body>
     <h1>Выявление вкусов потребителей</h1>
     <p>Здравствуйте, потратьте, пожалуйста, несколько минут своего времени на заполнение следующей анкеты.
-   <form action="" method="post">
+   <form action="?" method="post">
     <h2>Оцените, пожалуйства, приведенные аспекты в отношении к выбору сырков творожных торговой марки "Ми-Шу!" по важности:</h2>
     <table>
     <tr>
@@ -58,28 +58,38 @@
    </form>
    <?php
 
-$fileName="opros_1.txt";
-   $result1 = $_POST["N1"];
+// $fileName="opros_1.txt";
+//    $result1 = $_POST["N1"];
 
-   $count1 = explode(PHP_EOL, file_get_contents($fileName));
+//    $count1 = explode(PHP_EOL, file_get_contents($fileName));
 
-   $count[$result]++;
-   file_put_contents($fileName, implode(PHP_EOL, $count));
-   $sumN=array_sum($count);
+//    $count[$result]++;
+//    file_put_contents($fileName, implode(PHP_EOL, $count));
 
+//    $sumN=array_sum($count);
+$result1=$_POST["N1"];
+$result2=$_POST["N2"];
+$result3=$_POST["N3"];
+$result4=$_POST["N4"];
+// $count1[$result1]++;
+// $count2[$result2]++;
+// $count3[$result3]++;
+// $count4[$result4]++;
 
-   ?>
+// $summball1=array_sum($result1);
+//    $summball2=array_sum($count2);
+//    $summball3=array_sum($count3);
+//    $summball4=array_sum($count4);
+//    ?>
 
-    <div class=meny>
-        <?php
-        echo "<h1>Результаты голосования: </h1>";
-        echo "<h2>Очень хороший:" .$procent[0]. "%</h2>";
-        echo "<h2>Хороший: " . $procent[1]. "%</h2>";
-        echo "<h2>Нормальный: ". $procent[2]. "%</h2>";
-        echo "<h2>Плохой: " . $procent[3]. "%</h2>";
-        echo "<h1>ИТОГО: " .$sumN. " голосов</h1>";
+//     <div class=meny>
+//         <?php
+//         echo "<h1>Качество: $summball1</h1>";
+//         echo "<h2>Цена:" .$summball2. "баллов</h2>";
+//         echo "<h2>Бренд: " . $summball3. "баллов</h2>";
+//         echo "<h2>Известность: ". $summball4. "баллов</h2>";
+    
         ?>
-    </div>;hp
-   ?>
+    </div>
 </body>
 </html>
